@@ -1,10 +1,5 @@
 import math
 
-pathh = []
-pathh.append([1,2])
-pathh.append([1,4])
-print(pathh[-1][1])
-"""
 def move(direction, length, path):
 	if direction == 'R':
 		for i in range(1,length+1):
@@ -26,10 +21,6 @@ def move(direction, length, path):
 			x = path[-1][0]
 			y = path[-1][1]
 			path.append([x,y+1])
-	
-
-
-
 
 
 f = open("in.txt")
@@ -42,12 +33,6 @@ path1.append([0,0])
 
 path2 = []
 path2.append([0,0])
-
-
-
-
-
-
 
 for command in line1:
 	direction = command[0]
@@ -83,5 +68,3 @@ for point in path1:
 
 print(mini)
 print(step_mini)
-
-"""
